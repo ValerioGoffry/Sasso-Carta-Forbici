@@ -27,7 +27,7 @@ def scelte():
 
 while True:
     scelta_utente = input("Scegli sasso,carta,forbici: ")
-    if scelta_utente == "sasso" or scelta_utente == "carta" or scelta_utente:
+    if scelta_utente == "sasso" or scelta_utente == "carta" or scelta_utente == "forbici":
         print(f"{nome} ha scelto: {scelta_utente.lower()}")
         print(f"Il Computer ha scelto: {scelta_pc}")
         scelte()
