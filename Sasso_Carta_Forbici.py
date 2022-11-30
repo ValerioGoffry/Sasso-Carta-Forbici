@@ -25,11 +25,15 @@ def scelte():
         print(f"Ha vinto {nome}!")
 
 
-while True:
+altra_partita = "s"
+
+while altra_partita == "s":
     scelta_utente = input("Scegli sasso,carta,forbici: ")
     if scelta_utente == "sasso" or scelta_utente == "carta" or scelta_utente == "forbici":
         print(f"{nome} ha scelto: {scelta_utente.lower()}")
         print(f"Il Computer ha scelto: {scelta_pc}")
         scelte()
-    else:
-        print("Devi per forza inserire sasso, carta o forbici")
+        altra_partita = input("Premi s se vuoi fare un altra partita altrimenti n --->  ")
+
+print("Grazie per avere giocato")
+input("Premi un tasto per terminare il programma --> ")
